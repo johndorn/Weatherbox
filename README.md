@@ -5,6 +5,8 @@ An Arduino project that can get a visual representation of the current temperatu
 
 This project was created to give to my dad as a birthday gift. 
 
+![alt tag](https://dl.dropboxusercontent.com/u/24982912/IMG_20130711_210012.jpg)
+
 Here's a parts list:
 
 -Arduino Uno (I'm using R2, even though the current model is R3)
