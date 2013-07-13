@@ -5,7 +5,7 @@ An Arduino project that can get a visual representation of the current temperatu
 
 This project was created to give to my dad as a birthday gift. 
 
-![alt tag](https://dl.dropboxusercontent.com/u/24982912/IMG_20130711_210012.jpg)
+![alt tag](http://i.imgur.com/dHwTDWDh.jpg)
 
 Here's a parts list:
 
@@ -26,4 +26,9 @@ When the XML is returned, it parses the data and looks for the 'weather' and 'te
 
 Future plans include adding a bright white flicker of the light (to simulate lightning/storms) when the 'weather' property indicates percipitation.
 
-If you have any questions, please reach out. I'll also add more pictures when I'm not so tired :)
+And, the finished product!
+
+![alt tag](http://i.imgur.com/kuTcaXph.jpg)
+
+The card on the inside:
+![alt tag](http://i.imgur.com/rF8fernh.jpg)
