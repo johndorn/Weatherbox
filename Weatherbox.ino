@@ -30,8 +30,6 @@ byte greenPin = 5;
 byte bluePin = 6;
 int rgb[3] = {0, 0, 0};
 
-int oldRed, oldBlue, oldGreen;
-
 // Booleans used for parsing
 boolean elemBool = false;
 boolean valueBool = false;
