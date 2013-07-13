@@ -53,6 +53,35 @@ void setup() {
   //Initialize serial and wait for port to open:
   Serial.begin(9600); 
   
+  Serial.println("Trying 100: ");
+  setRGB(100);
+  delay(5000);
+  Serial.println("Trying 94: ");
+  setRGB(94);
+  delay(5000);
+  Serial.println("Trying 85: ");
+  setRGB(85);
+  delay(5000);
+  Serial.println("Trying 75: ");
+  setRGB(75);
+  delay(5000);
+  Serial.println("Trying 65: ");
+  setRGB(65);
+  delay(5000);
+  Serial.println("Trying 55: ");
+  setRGB(55);
+  delay(5000);
+  Serial.println("Trying 45: ");
+  setRGB(45);
+  delay(5000);
+  Serial.println("Trying 35: ");
+  setRGB(35);
+  delay(5000);
+  Serial.println("Trying 25: ");
+  setRGB(25);
+  delay(5000);
+  Serial.println("Trying 15: ");
+  setRGB(15);
 
   // check for the presence of the shield:
   if (WiFi.status() == WL_NO_SHIELD) {
@@ -225,16 +254,15 @@ boolean charCompare (char* lookup) {
 
 // Set the rgb value based on the temperature value.
 void setRGB(int tempf) {
-  
-  // Copy old rgb values for fading effect
-  oldRed = rgb[0];
-  oldGreen = rgb[1];
-  oldBlue = rgb[2];
-  
-  if (tempf >= 90) { 
-    rgb[0] = 255 - 240;
-    rgb[1] = 255 - 58;
-    rgb[2] = 255 - 7;
+  if (tempf >= 95) {
+    rgb[0] = 255 - 172;
+    rgb[1] = 255 - 36;
+    rgb[2] = 255 - 48;
+  }
+  if (tempf >= 90 && tempf <=94) { 
+    rgb[0] = 255 - 207;
+    rgb[1] = 255 - 46;
+    rgb[2] = 255 - 49;
   }
   if (tempf >= 80 && tempf <=89) { 
     rgb[0] = 255 - 238;
@@ -252,29 +280,29 @@ void setRGB(int tempf) {
     rgb[2] = 255 - 27;
   }
   if (tempf >= 50 && tempf <=59) { 
-    rgb[0] = 255 - 19;
-    rgb[1] = 255 - 166;
-    rgb[2] = 255 - 50;
+    rgb[0] = 255 - 23;
+    rgb[1] = 255 - 106;
+    rgb[2] = 255 - 43;
   }
   if (tempf >= 40 && tempf <=49) { 
-    rgb[0] = 255 - 4;
-    rgb[1] = 255 - 148;
-    rgb[2] = 255 - 87;
+    rgb[0] = 255 - 3;
+    rgb[1] = 255 - 130;
+    rgb[2] = 255 - 122;
   }
   if (tempf >= 30 && tempf <=39) { 
-    rgb[0] = 255 - 1;
-    rgb[1] = 255 - 134;
-    rgb[2] = 255 - 141;
+    rgb[0] = 255 - 0;
+    rgb[1] = 255 - 147;
+    rgb[2] = 255 - 159;
   }
   if (tempf >= 20 && tempf <=29) { 
-    rgb[0] = 255 - 3;
-    rgb[1] = 255 - 86;
-    rgb[2] = 255 - 155;
+    rgb[0] = 255 - 44;
+    rgb[1] = 255 - 77;
+    rgb[2] = 255 - 143;
   }
   if (tempf <=19) { 
-    rgb[0] = 255 - 46;
-    rgb[1] = 255 - 20;
-    rgb[2] = 255 - 141;
+    rgb[0] = 255 - 126;
+    rgb[1] = 255 - 188;
+    rgb[2] = 255 - 209;
   }
   analogWrite(redPin, rgb[0]);
   analogWrite(greenPin, rgb[1]); 
